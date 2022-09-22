@@ -1,0 +1,118 @@
+body {
+  background-color: #212529;
+}
+
+.all_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+}
+
+.img_app {
+  display: none;
+}
+
+.div_text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title_name {
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+
+  background: linear-gradient(to right, #fd377e 35%, white 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info_resume {
+  position: relative;
+  bottom: 25px;
+
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-weight: 750;
+
+  width: 70vw;
+}
+
+.info-text {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  text-align: left;
+
+  position: relative;
+  bottom: 25px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(13) infinite alternate,
+    blink 800ms steps(13) infinite normal;
+  border-right: 5px solid black;
+}
+
+.btn_init {
+  background-color: #fd377e;
+  color: white;
+  font-size: 1rem;
+
+  width: 241px;
+  height: 40px;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn_init:hover {
+  background-color: #af0040;
+  transition: 1.2s;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 200px;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: rgb(255, 255, 255);
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+@media (min-width: 862px) {
+  .all_content {
+    gap: 10vw;
+  }
+
+  .div_text {
+    margin-left: 40px;
+  }
+
+  .info_resume {
+    font-size: 2.2rem;
+    width: 23vw;
+  }
+
+  .img_app {
+    display: flex;
+    width: 490px;
+    height: 490px;
+  }
+
+
+}
