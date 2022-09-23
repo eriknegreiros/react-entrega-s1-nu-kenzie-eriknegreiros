@@ -1,0 +1,60 @@
+.section_finances {
+  margin-top: 40px;
+}
+
+.div_finances {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.div_btn_finances {
+  display: flex;
+  gap: 20px;
+}
+
+.btn_finances {
+  width: 75px;
+  border: 1.4px solid rgba(233, 236, 239, 1);
+  background: rgba(233, 236, 239, 1);
+  height: 35px;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn_finances:hover {
+  background: rgba(253, 55, 126, 1);
+  color: white;
+  transition: 1s;
+}
+
+.text_resume_finances {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .section_finances {
+    margin-top: 100px;
+    margin-right: 5vw;
+  }
+
+  .div_btn_finances {
+    display: flex;
+    gap: 1vw;
+  }
+
+  .div_finances {
+    flex-direction: row;
+    gap: 5vw;
+    position: relative;
+    left: 5vw;
+  }
+
+  .btn_finances {
+    width: 80px;
+  }
+}

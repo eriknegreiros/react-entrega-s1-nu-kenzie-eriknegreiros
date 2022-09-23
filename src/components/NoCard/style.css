@@ -1,0 +1,27 @@
+.no_card_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_no_card {
+  margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.img_no_card {
+  width: 80vw;
+  height: 280px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .no_card_div {
+    position: relative;
+    left: 5vw;
+  }
+
+  .img_no_card {
+    width: 35vw;
+  }
+}

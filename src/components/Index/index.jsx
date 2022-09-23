@@ -1,8 +1,11 @@
 import "./style.css";
-
 import img from "../../assets/indexImg.png";
 
-const Index = () => {
+const Index = ({ setIsLoggedIn }) => {
+  const dashboard = () => {
+    setIsLoggedIn(true);
+  };
+
   return (
     <main>
       <div className="all_content">
@@ -12,7 +15,9 @@ const Index = () => {
             Centralize o controle das suas finanças
           </h2>
           <p className="info-text">de forma rápida e segura</p>
-          <button className="btn_init">Iniciar</button>
+          <button onClick={dashboard} className="btn_init">
+            Iniciar
+          </button>
         </div>
         <div className="div_img">
           <img className="img_app" src={img} alt="painel" />
