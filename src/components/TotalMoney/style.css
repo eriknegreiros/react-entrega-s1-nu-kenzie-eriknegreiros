@@ -1,6 +1,5 @@
 .section_total_money {
   display: flex;
-  
 }
 
 .div_total_money {
@@ -45,5 +44,6 @@
 @media (min-width: 768px) {
   .div_total_money {
     width: 24vw;
+    
   }
 }

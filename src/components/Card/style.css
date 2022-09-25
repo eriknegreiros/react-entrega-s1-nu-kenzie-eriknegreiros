@@ -7,12 +7,22 @@
   margin-bottom: 10px;
 }
 
-.card_Individual {
+.enter {
   background-color: rgba(248, 249, 250, 1);
   width: 90vw;
   height: 100px;
   border-radius: 4px;
-  border-left: 3px solid rgba(233, 236, 239, 1);
+  border-left: 3px solid #03b898;
+  animation: Slide 1s ease 0s 1 normal forwards;
+}
+
+.expense {
+  background-color: rgba(248, 249, 250, 1);
+  width: 90vw;
+  height: 100px;
+  border-radius: 4px;
+  border-left: 3px solid #e9ecef;
+  animation: Slide 1s ease 0s 1 normal forwards;
 }
 
 .elements_card {
@@ -37,6 +47,13 @@
   font-size: 0.9rem;
 }
 
+.type_card {
+  font-family: "Nunito", sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
 .btn_card {
   height: 20px;
   cursor: pointer;
@@ -50,13 +67,30 @@
   transition: 1s;
 }
 
+@keyframes Slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (min-width: 768px) {
   .all_card {
     position: relative;
     left: 5vw;
   }
 
-  .card_Individual {
+  .expense {
+    width: 35vw;
+    height: 100px;
+  }
+
+  .enter {
     width: 35vw;
     height: 100px;
   }

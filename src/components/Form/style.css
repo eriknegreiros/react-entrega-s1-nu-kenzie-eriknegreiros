@@ -108,7 +108,7 @@ select {
   cursor: pointer;
 }
 
-.btn_send_money:hover{
+.btn_send_money:hover {
   background-color: #af0040;
   transition: 1.2s;
 }

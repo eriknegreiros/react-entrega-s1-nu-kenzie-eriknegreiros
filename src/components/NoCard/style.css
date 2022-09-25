@@ -4,7 +4,6 @@
 }
 
 .text_no_card {
-  margin-top: 10px;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
@@ -13,12 +12,27 @@
   width: 80vw;
   height: 280px;
   margin-top: 30px;
+  animation: myAnim 2s ease 0s infinite normal none;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
 
 @media (min-width: 768px) {
   .no_card_div {
     position: relative;
-    left: 5vw;
+    left: 70px;
   }
 
   .img_no_card {
