@@ -1,0 +1,152 @@
+section {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  height: 290px;
+  border: 1px solid rgba(233, 236, 239, 1);
+  border-radius: 4px;
+  justify-content: center;
+  gap: 80px;
+}
+
+.description_input {
+  position: relative;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.description_label {
+  font-size: 0.8rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.input_text_description {
+  width: 70vw;
+  height: 40px;
+  border: 2px solid rgba(248, 249, 250, 1);
+  background-color: rgba(248, 249, 250, 1);
+  border-radius: 8px;
+  padding-left: 8px;
+}
+
+.example_description {
+  font-size: 0.9rem;
+  color: #868e96;
+  font-family: "Nunito", sans-serif;
+}
+
+.value_input {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  position: relative;
+  bottom: 5px;
+}
+
+.div_money {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label_value {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+}
+
+.input_money {
+  width: 30vw;
+  height: 40px;
+  border: 2px solid rgba(248, 249, 250, 1);
+  background-color: rgba(248, 249, 250, 1);
+  border-radius: 8px;
+  padding-left: 8px;
+  font-family: "Nunito", sans-serif;
+}
+
+.div_type_of_value {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label_option {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+}
+
+select {
+  width: 30vw;
+  height: 47px;
+  border: 2px solid rgba(248, 249, 250, 1);
+  background-color: rgba(248, 249, 250, 1);
+  border-radius: 8px;
+  padding-left: 8px;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn_send_money {
+  position: relative;
+  bottom: 60px;
+  width: 75vw;
+  height: 44px;
+  background-color: rgba(253, 55, 126, 1);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+.btn_send_money:hover {
+  background-color: #af0040;
+  transition: 1.2s;
+}
+
+@media (min-width: 768px) {
+  section {
+    align-items: flex-start;
+    margin-left: 17.5vw;
+  }
+  form {
+    width: 24vw;
+    height: 300px;
+  }
+
+  .description_input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .value_input {
+    gap: 2vw;
+  }
+
+  .input_text_description {
+    width: 21vw;
+  }
+
+  .input_money {
+    width: 9vw;
+  }
+
+  select {
+    width: 9vw;
+  }
+
+  .btn_send_money {
+    width: 22vw;
+    bottom: 50px;
+  }
+}
