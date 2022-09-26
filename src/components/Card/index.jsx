@@ -1,7 +1,20 @@
 import "./style.css";
 import img from "../../assets/trash.png";
 
-const Card = ({ transaction }) => {
+const Card = ({
+  transaction,
+  listTransactions,
+  listTransactionFiltered,
+  setListTransactionFiltered,
+  index,
+  setListTransactions
+}) => {
+  
+  const filterDelete = (transaction) => {
+      const data = listTransactions.filter((element) => element.description !== transaction.description);
+      setListTransactions(data); 
+  };
+
   return (
     <section className="section_card">
       <div className="all_card">
@@ -14,7 +27,7 @@ const Card = ({ transaction }) => {
                 currency: "BRL",
               })}
             </p>
-            <button className="btn_card">
+            <button onClick={() => filterDelete(transaction)} className="btn_card">
               <img src={img} alt="" />
             </button>
           </div>

@@ -14,6 +14,8 @@ function App() {
 
   const [listTransactions, setListTransactions] = useState([]);
 
+  const [listTransactionFiltered, setListTransactionFiltered] = useState([]);
+
   return isLoggedIn ? (
     <div className="all">
       <div className="semi">
@@ -25,11 +27,21 @@ function App() {
         <TotalMoney listTransactions={listTransactions} />
       </div>
       <div className="list">
-        <Button listTransactions={listTransactions}/>
+        <Button
+          listTransaction={listTransactions}
+          setListTransactionFiltered={setListTransactionFiltered}
+          listTransactionFiltered={listTransactionFiltered}
+        />
+
         {listTransactions.length === 0 ? (
           <NoCard />
         ) : (
-          <List listTransactions={listTransactions} />
+          <List
+            listTransactions={listTransactions}
+            listTransactionFiltered={listTransactionFiltered}
+            setListTransactionFiltered={setListTransactionFiltered}
+            setListTransactions={setListTransactions}
+          />
         )}
       </div>
     </div>
