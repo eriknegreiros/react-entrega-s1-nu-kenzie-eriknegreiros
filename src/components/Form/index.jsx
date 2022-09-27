@@ -5,13 +5,14 @@ const Form = ({ listTransaction, setListTransactions }) => {
   const [description, setDescription] = useState("");
   const [money, setMoney] = useState(0);
   const [type, setType] = useState("Entrada");
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const properties = {
       description: description,
       value: money,
-      type: type,
+      type: type
     };
     setListTransactions([...listTransaction, properties]);
   };

@@ -16,11 +16,7 @@ const Button = ({ listTransaction, setListTransactionFiltered, listTransactionFi
   };
 
   const all = () => {
-    const enterFiltered = listTransaction.filter(
-      (element) => element.type === "Entrada" || element.type === "Despesa"
-    );
-    setListTransactionFiltered(enterFiltered) ;
-    
+   setListTransactionFiltered([])
   };
 
   return (
